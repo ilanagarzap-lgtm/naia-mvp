@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>naïa — claridad para tu pelo, confianza para ti</title>
+  <meta name="description" content="naïa: claridad para tu pelo, confianza para ti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#f3ebe3; --paper:#fff9f2; --ink:#2c2622; --muted:#6b6159; --line:#e7ddd3; --accent:#6b4f3b; --radius:14px; --maxw:940px; --pad:20px; }
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink); }
+    .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 var(--pad); }
+    h1,h2,h3{ font-family:"Cormorant Garamond",serif; line-height:1.15; margin:0; letter-spacing:.1px; }
+    body{ font-family:"Libre Baskerville",Georgia,serif; line-height:1.7; font-size:16px; }
+    h1{ font-size:clamp(32px,6vw,52px); }
+    p.lead{ font-size:clamp(16px,2.5vw,18px); color:var(--ink); max-width:70ch; }
+    header.hero{ padding:50px 0 22px; background:linear-gradient(180deg, rgba(239,229,217,.45), rgba(239,229,217,0)); }
+    .badge{ display:inline-block; padding:6px 10px; border-radius:999px; background:#efe3d7; border:1px solid var(--line); font-size:12px; letter-spacing:.3px; text-transform:lowercase; }
+    .grid{ display:grid; gap:22px; grid-template-columns:1.25fr 1fr; align-items:start; }
+    .card{ background:var(--paper); border:1px solid var(--line); border-radius:var(--radius); padding:18px; box-shadow:0 1px 0 rgba(0,0,0,.03); }
+    .options{ display:grid; gap:10px; margin-top:10px; }
+    .opt{ display:flex; gap:10px; align-items:center; background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px; }
+    .opt input{ width:18px; height:18px; accent-color:var(--accent); }
+    section.lead{ padding:10px 0 6px; }
+    .lead.card{ padding:20px 18px; }
+    form{ display:grid; gap:12px; }
+    label{ font-weight:700; font-size:14px; color:var(--ink); }
+    input[type="email"], input[type="text"]{ width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:#fff; font-family:"Libre Baskerville",Georgia,serif; font-size:15px; }
+    .consent{ display:flex; gap:10px; align-items:flex-start; font-size:14px; color:var(--muted); }
+    .consent input{ margin-top:3px; accent-color:var(--accent); }
+    section.final{ padding:8px 0 42px; text-align:center; }
+    .cta{ margin-top:12px; display:block; width:100%; text-align:center; background:var(--accent); color:#fff; border:1px solid var(--accent); padding:10px 12px; border-radius:10px; font-weight:700; font-size:15px; font-family:"Libre Baskerville",Georgia,serif; letter-spacing:.2px; }
+    .hint{ display:block; margin-top:10px; color:var(--muted); font-size:13px; }
+    footer{ padding:24px 0; text-align:center; color:var(--muted); border-top:1px solid var(--line); }
+    @media (max-width:860px){ .grid{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <span class="badge">acceso anticipado</span>
+      <div class="grid" style="margin-top:16px;">
+        <div>
+          <h1>naïa: claridad para tu pelo, confianza para ti.</h1>
+          <p class="lead" style="margin-top:10px;">
+            naïa es una marca que busca traer claridad al cuidado del pelo 🌸. nació de esa sensación de ruido, de probar sin certeza, de no saber en qué creer ☁️. aquí vas a encontrar calma y criterio: aprender, entender y decidir con confianza 🌿. no seguimos promesas vacías ni tendencias pasajeras; hablamos desde la evidencia y la empatía, para que te conozcas mejor y cuides tu pelo con claridad 🪞.
+          </p>
+        </div>
+        <div class="card">
+          <strong style="font-family:'Cormorant Garamond',serif; font-size:22px;">¿qué sientes cuando intentas entender cómo cuidar tu pelo?</strong>
+          <div class="options" id="pain">
+            <label class="opt"><input type="radio" name="pain" value="demasiado ruido y consejos que se contradicen"> demasiado ruido y consejos que se contradicen</label>
+            <label class="opt"><input type="radio" name="pain" value="no sé por dónde empezar ni qué elegir"> no sé por dónde empezar ni qué elegir</label>
+            <label class="opt"><input type="radio" name="pain" value="pruebo cosas y no veo claridad"> pruebo cosas y no veo claridad</label>
+            <label class="opt"><input type="radio" name="pain" value="quiero pasos simples y confiables"> quiero pasos simples y confiables</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="lead card" style="margin-top:14px;">
+      <p class="lead" style="margin:0 0 12px;">si quieres saber cuando abrimos, puedes dejar tu correo o tu usuario.</p>
+      <form id="lead">
+        <label>email</label>
+        <input type="email" name="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" inputmode="email"/>
+        <label>usuario de instagram</label>
+        <input type="text" name="ig" placeholder="@tuusuario" autocomplete="off"/>
+        <label class="consent"><input type="checkbox" name="consent"/> acepto que me contacten sobre este proyecto. <span class="muted">(cero spam)</span></label>
+      </form>
+    </section>
+
+    <section class="final">
+      <form id="submitForm" method="POST" action="https://formspree.io/f/your-endpoint">
+        <input type="hidden" name="pain" />
+        <input type="hidden" name="email" />
+        <input type="hidden" name="ig" />
+        <input type="hidden" name="consent" />
+        <input type="hidden" name="source" value="instagram" />
+        <button class="cta" type="submit" id="finalCta" aria-label="quiero conocer naïa">quiero conocer naïa</button>
+        <span class="hint">tu clic nos acerca a abrir este espacio.</span>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> naïa — con calma
+  </footer>
+
+  <script>
+    const data = { pain:"", email:"", ig:"", consent:"no", source:"instagram" };
+    document.querySelectorAll('input[name="pain"]').forEach(r => { r.addEventListener('change', () => data.pain = r.value); });
+    function collectLead(){ const email = document.querySelector('input[name="email"]').value.trim(); const ig = document.querySelector('input[name="ig"]').value.trim(); const consent = document.querySelector('input[name="consent"]').checked ? "sí":"no"; data.email = email; data.ig = ig; data.consent = consent; }
+    function fillHidden(){ collectLead(); const form = document.getElementById('submitForm'); form.querySelector('input[name="pain"]').value = data.pain; form.querySelector('input[name="email"]').value = data.email; form.querySelector('input[name="ig"]').value = data.ig; form.querySelector('input[name="consent"]').value = data.consent; }
+    const cta = document.getElementById('finalCta');
+    cta.addEventListener('click', () => { if(!data.pain){ alert("elige la opción que mejor describe tu situación."); } });
+    document.getElementById('submitForm').addEventListener('submit', () => { fillHidden(); setTimeout(() => { const main = document.querySelector('section.final'); main.innerHTML = '<p class="lead" style="text-align:center; margin: 16px auto 0;">gracias. registramos tu interés.</p>'; }, 150); });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
